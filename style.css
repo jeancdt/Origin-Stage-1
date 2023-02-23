@@ -1,0 +1,111 @@
+/* cascating stylesheet (CSS) - o último citado com a referencia será o considerado pelo programa */
+
+* {
+    margin: 0;
+}
+
+html, body{
+    --black: hsl(240, 6%,13%);
+    --grey: hsl(240, 9%, 89%);
+
+    height: 100%;
+    font-family: 'Roboto', sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+body{
+    display: grid;
+    place-items: center;
+}
+
+main{
+    background: url(images/background.svg);
+    width: 375px;
+    height: 812px;
+}
+
+.contanter {
+    max-width: 250px;
+    margin-left: auto;
+    margin-right: auto;
+        /* ambas as margens para equilibrar ambas e deixar no meio a "caixa" */
+    text-align: center;
+
+    color: var(--grey)
+}
+
+.avatar {
+    width: 10rem;
+    margin: 11.5rem auto 0;
+
+    position: relative;
+        /* quando colocado relative, ele será o guia para a posição do avatar span */
+}
+
+.avatar span {
+    position: absolute;
+        /* absolute para ambas as imagens pertencerem ao mesmo bloco, porém, será absoluto a tudo */
+    top: -15px;
+    z-index: 1;
+        /* ele diz a posição em z (profundidade) que ficará a imagem */
+}
+
+.avatar > img {
+        /* o sinal ">" diz ao computador que somente a imagem de primeiro nível será pega,
+        ou seja, a outra está dentro de um subconjunto "span" e é considerada "2 nível" */
+    width: 10rem;
+    height: 11.5rem;
+        /* a imagem, utilizando somente o widht e height ficará deformada, então utilizamos
+        o object-fit para a imagem ficar "normal" e, os lados que "sobrariam" serão cortados */
+    object-fit: cover;
+
+    clip-path: polygon(50% 0, 100% 25%, 100% 75%, 50% 100%, 0 75%, 0 25%);
+        /* para fazer o polígono ou outras formas, utilizar https://bennettfeely.com/clippy/ */
+}
+
+h1{
+    font-size: 1.5rem;
+
+    margin-top: 1.5rem;
+
+    text-align: center;
+
+    color: var(--grey)
+}
+
+a{
+    color: var(--grey);
+    text-decoration: none;
+        /* comando tira qualquer modificação da escrita, como sublinhados */
+    
+    margin-top: 0.25rem;
+
+    display: flex;
+    gap: 0.75rem;
+
+    justify-content: center;
+    align-items: center;
+        /* ambos são para centralizar */
+}
+
+p{
+    margin-top: 2rem;
+    
+    text-align: center;
+
+    color: var(--grey)
+}
+
+ul{
+    margin-top: 4rem;
+    
+    list-style: none;
+    padding: 0;
+
+    display: flex;
+    gap: 0.5rem;
+        /* distancia entre os blocos */
+    
+    justify-content: center;
+        /* alinhar ao centro de y */
+}

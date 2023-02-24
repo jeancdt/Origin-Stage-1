@@ -27,19 +27,30 @@ main{
 
 @media (min-width: 720px) {
 	/* estilos versão tablet */
-    .userNameText {
-        font-size: 2.5rem;
+    main {
+        background: url(images/backgroundTablet.svg) no-repeat center/cover;
     }
 
+    .userNameText {
+        font-size: 2.0rem;
+    }
 }
 
 @media (min-width: 960px) {
 	/* estilos versão desktop */
     main {
-        width: 100%;
+        background: url(images/backgroundDesktop.svg) no-repeat;
+        background-size: 200%;
         background-position: top;
-        background-position-y: -600px;
-        
+        background-position-y: -240px;
+    }
+
+    .userNameText {
+        color: #fdf0ff;
+    }
+
+    .bioText {
+        color: #fdf0ff;
     }
 }
 
@@ -128,3 +139,6 @@ ul{
     justify-content: center;
         /* alinhar ao centro de y */
 }
+
+/* Animation */
+

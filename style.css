@@ -19,9 +19,28 @@ body{
 }
 
 main{
-    background: url(images/background.svg);
-    width: 375px;
-    height: 812px;
+    background: url(images/background.svg) no-repeat center/cover;
+    width: 100vw;
+    min-height: 812px;
+    height: 100vh;
+}
+
+@media (min-width: 720px) {
+	/* estilos versão tablet */
+    .userNameText {
+        font-size: 2.5rem;
+    }
+
+}
+
+@media (min-width: 960px) {
+	/* estilos versão desktop */
+    main {
+        width: 100%;
+        background-position: top;
+        background-position-y: -600px;
+        
+    }
 }
 
 .contanter {

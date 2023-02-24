@@ -1,10 +1,26 @@
 #NLW Heat Orgin - Cracha
 
-Projeto construído como parte do conteúdo NLW Heat Origin e utilizado como primeiro aprendizado na área de JavaScript.
-
-![preview](./.github/preview.png)
+Projeto construído como parte do conteúdo NLW Heat Origin e utilizado como primeiro aprendizado na área de JavaScript. Visando ter uma proposta de responsividade, busquei alterar as cores tanto para mobile, quanto para tablets e desktops.
 
 [🔍 Clique aqui para acessar](https://jeancdt.github.io/cracha-nlw/)
+
+## 📱 Preview Mobile
+
+- Dimensionamento: iPhone SE
+
+![preview](./.github/previewMobile.png)
+
+## 🎴 Preview Tablet
+
+- Dimensionamento: iPad Air
+
+![preview](./.github/previewTablet.png)
+
+## 💻 Preview Desktop
+
+- Dimensionamento: Nest Hub Max
+
+![preview](./.github/previewDesktop.png)
 
 ## ⚙ Tecnologias
 
@@ -12,6 +28,7 @@ Projeto construído como parte do conteúdo NLW Heat Origin e utilizado como pri
 - CSS
 - Git e Github
 - JavaScript
+- Figma
 
 ## ✍🏻 Como Utilizar
 
@@ -43,6 +60,11 @@ Projeto construído como parte do conteúdo NLW Heat Origin e utilizado como pri
     - Utilizar funções
     - Utilizar e acessar a DOM
     - Trocar links, imagens e textos
+
+- Figma
+    - Conceitos básicos
+    - Modificar cores e efeitos
+    - Autonomia
 
 ## ✋🏻 Atenção
 

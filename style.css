@@ -144,3 +144,116 @@ ul{
 
 /* Animation */
 
+.avatar > img {
+    animation: fromTop 1.4s .5s backwards;
+}
+
+    /* fromTop tem que ser dito o que é, visto que ele não faz parte do animation */
+
+@keyframes fromTop {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.avatar span {
+    animation: fromTopStamp 1.4s 1.0s backwards;
+}
+
+@keyframes fromTopStamp {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.userNameText {
+    animation: fromRight 2.0s 1.0s backwards;
+}
+
+@keyframes fromRight {
+    from {
+        opacity: 0;
+        transform: translateX(-150px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.userGithubLink {
+    animation: fromLeft 2.0s 1.5s backwards;
+}
+
+@keyframes fromLeft {
+    from {
+        opacity: 0;
+        transform: translateX(150px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.bioText {
+    animation: fromRightBio 2.0s 2.0s backwards;
+}
+
+@keyframes fromRightBio {
+    from {
+        opacity: 0;
+        transform: translateX(-150px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+ul li {
+    animation: fromBottom 1.5s backwards;
+}
+
+ul li:nth-child(4) {
+    animation-delay: 2.7s;
+}
+
+ul li:nth-child(3) {
+    animation-delay: 2.9s;
+}
+
+ul li:nth-child(2) {
+    animation-delay: 3.1s;
+}
+
+ul li:nth-child(1) {
+    animation-delay: 3.3s;
+}
+
+@keyframes fromBottom {
+    from {
+        opacity: 0;
+        transform: translateY(150px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

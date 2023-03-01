@@ -48,6 +48,9 @@ Projeto construído como parte do conteúdo NLW Heat Origin e utilizado como pri
     - Auxiliar em formatação de imagem
     - Auxiliar na formatação e posicionamento de blocos
     - Aprender comandos novos
+    - Animação
+    - Diferenciar entre phones, tablets e desktops
+    - Autonomia
 
 - Git e Github
     - Lembrar conceitos

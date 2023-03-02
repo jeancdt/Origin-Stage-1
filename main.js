@@ -10,7 +10,7 @@
     // Isso, como são dados "pessoais", pode ser jogado dentro de um "bloco" chamado Usuario,
     // mas não necessariamente precisa ser, pode ser fora do bloco e ter sua própria indentificação (let ou const)
     // CUIDADO: os itens dentro do bloco só poder ser feitos com ":" e separados por VÍRGULA, e os de fora apenas com "="
-            
+
 // alert(user.name)
     // Utilizamos o .nomedoitem para selecionar o item que queremos mostrar no alerta
     // item este, que pertence ao "bloco" user
@@ -27,7 +27,7 @@ const linksSocialMedia = {
     facebook: "jeancdetoni",
     twitter: "jeandetoni"
 }
-                        
+
     // showMeSomething ("github")
         // o que está em parenteses será transformado no texto da função showme e, consequentemente,
         // será mostrado no alert
@@ -47,7 +47,7 @@ function changeLinks() {
 for (let li of socialLinks.children) {
     // É a mesma coisa que o for de cima, porém, repetirá até os "filhos" acabarem
     const social = li.getAttribute("class")
-                    
+
     // alert (li.children[0].href)
         // O "0" representará o 1 filho, visto que, o computador conta = 01234...
 
@@ -59,7 +59,7 @@ for (let li of socialLinks.children) {
             // "class" terem o mesmo nome dos itens do "linkSocialMedia"
     }
 }
-            
+
 changeLinks()
 
 function getGithubProfileInfo() {
@@ -77,7 +77,7 @@ function getGithubProfileInfo() {
                 // Ao inves de escrever: "function nomeDaFunção (argumentos) {}"
                 // Escrevemos: "argumentos => {}"
                 // Criando com isso, uma função "anonima", visto que, ela não tem um nome
-        
+
         .then(data => {
             userName.textContent = data.name
                 // LEMBRAR QUE: para trocar alguma escrita, utilizar o ".textContent"
